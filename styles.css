@@ -1,0 +1,154 @@
+/* 
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+*/
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins';
+    color: #fff;
+}
+
+body {
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("images/bg-intro-desktop.png");
+    background-size: cover;
+    min-height: 100vh;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box {
+    max-width: 50rem;
+}
+
+.heading-1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    max-width: 40rem;
+}
+
+.heading-2 {
+    font-weight: 300;
+}
+
+.form-container {
+    max-width: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 1.6rem 4rem;
+    background-color:hsl(248, 32%, 49%);
+    border-radius: 10px;
+    box-shadow: 0 .5rem 0 rgba(0,0,0,.1);
+    margin-bottom: 2rem;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.4rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.form__input {
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.form__cta {
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-weight: 400;
+    padding: 1.2rem 3rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 .2rem 0 rgba(0,0,0,.5);
+}
+
+.paragraph {
+    font-size: .8rem;
+    font-weight: 400;
+    color: hsl(246, 25%, 77%);
+}
+
+.terms {
+    text-decoration: none;
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+}
+
+@media only screen and (max-width: 1000px) {
+    html { font-size: 50%; }
+}
+
+@media only screen and (max-width: 800px) {
+    .container { 
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .text-box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        background-image: url("images/bg-intro-mobile.png");
+    }
+}
